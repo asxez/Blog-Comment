@@ -1,0 +1,18 @@
+{
+  "name": "comment",
+  "github": {
+    "silent": true
+  },
+  "builds": [
+    {
+      "src": "index.js",
+      "use": "@vercel/node@2.5.10"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "index.js"
+    }
+  ]
+}
